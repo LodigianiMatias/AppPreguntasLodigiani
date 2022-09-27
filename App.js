@@ -1,7 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { useFonts } from 'expo-font';
-import { colors } from './src/constants/themes/colors';
 
 const styles = StyleSheet.create({
   container: {
