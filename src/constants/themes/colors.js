@@ -5,4 +5,5 @@ export const colors = {
     text: '#DBCC57',
     shadowText: '#A28A49',
     white: '#ffffff',
+    black: '#000000'
 }

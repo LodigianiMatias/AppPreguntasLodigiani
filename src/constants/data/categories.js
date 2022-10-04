@@ -18,5 +18,5 @@ export const categories = [
         id: 4,
         title: 'Geografía',
         color: '#412234',
-    }
+    },
 ]

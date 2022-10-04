@@ -8,14 +8,14 @@ const Stack = createNativeStackNavigator();
 const GameNavigator = () => {
     return (
         <Stack.Navigator
-            initiaulRouteName="Menú"
+            initiaulRouteName="MainMenu"
             screenOptions={{
                 headerStyle: {
                     backgroundColor: colors.background,
                 },
-                headerTintColor: colors.text,
+                headerTintColor: colors.black,
                 headerTitleStyle: {
-                    fontFamily: 'Candy',
+                    fontFamily: 'Lato-Bold',
                 },
             }}
         >
@@ -23,21 +23,23 @@ const GameNavigator = () => {
                 name="MainMenu"
                 component={MainMenu}
                 options={{
-                    title: 'Menú'
+                    title: 'Menú',
                 }}
             />
             <Stack.Screen
                 name="Categories"
                 component={Categories}
                 options={{
-                    title: 'Categorias'
+                    headerShown: false,
+                    title: 'Categorias',
                 }}
             />
             <Stack.Screen
                 name="Question"
                 component={Question}
                 options={({ route }) => ({
-                    title: route.params.name,
+                    title: 'Pregunta',
+                    // title: route.params.name,
                 })}
             />
         </Stack.Navigator>

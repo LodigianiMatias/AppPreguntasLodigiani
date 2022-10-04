@@ -6,15 +6,12 @@ export const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: colors.background,
         alignItems: 'center',
-        paddingTop: 50,
+        justifyContent: 'center',
     },
     title: {
         fontFamily: 'Bungee',
-        fontSize: 50,
-        marginBottom: 5,
-        marginTop:5,
-        color: colors.text,
-        textShadowColor: 'shadowText', 
-        textShadowOffset: {width: 3, height: 3}, textShadowRadius: 5,
-    },
+        fontSize: 24,
+        textShadowColor: colors.white, 
+        textShadowOffset: {width: 2, height: 2}, textShadowRadius: 3,
+    }
 })

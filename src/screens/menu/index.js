@@ -1,19 +1,19 @@
 import React from "react";
-import { View, Text, Button, FlatList } from "react-native";
-import { CategoryItem } from "../../components";
+import { View, Text, Button, FlatList, TouchableOpacity } from "react-native";
+import { colors } from "../../constants/themes";
 import {styles} from "./styles";
 
-const MainMenu = () => {
-    const renderItem = () => <CategoryItem/>
+const MainMenu = ({navigation}) => {
+    
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Interrogados</Text>
             <Text style={styles.text}>El juego consiste en responder preguntas al estilo trivia, ganarás si logras 3 respuestas correctas. Si respondes incorrectamente se reiniciará la partida</Text>
             <Button
-            color={'#CCBC8E'}
+            color={colors.black}
             title="Comenzar el juego!"
             style={styles.button}
-            renderItem={renderItem}
+            onPress={() => navigation.navigate("Categories")}
             >Comenzar Juego</Button>
         </View>
     )
